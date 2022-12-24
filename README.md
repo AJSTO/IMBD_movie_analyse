@@ -101,12 +101,12 @@ Run dockercomposer:
 ```
 
 
-##  📊Data cleansing and visualisation
-**Now all three containers are running, it will take about 15-20 minutes for scrapy to crawl all pages, you will see in terminal when scrapy finishes job.**
-**When scrapy finished you should open jupyter lab via localhost, type in your browser:**
+##  📊Data analisys
+**Open jupyter lab via localhost, type in your browser:**
 ```bash
   localhost:8888
 ```
 🚨In case the notebook requires a token pass a value which was assigned to JUPYER_TOKEN in .env🚨
 
-Next choose a file 🗒️data_visualisation.ipynb and run all cells to see data analyse.
+1. Choose a file 🗒️creating_db.ipynb and run all cells to create db and with values.
+2. Choose a file 🗒️analyse_imbd_dataset.ipynb and run all cells to see move analisys.
