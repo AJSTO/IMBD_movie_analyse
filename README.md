@@ -65,12 +65,12 @@ This project was focused to check the best movies and series of all time, the be
 ```bash
 
 .
-├── .env-sample    # environmental values
+├── .env-sample # environmental values
 ├── README.md
-├── analyse_imbd_dataset.ipynb  # notebook for analisys
-├── creating_db.ipynb   # notebook to create db and fill with rows
-├── docker-compose.yml  # docker compose file
-└── downloads      # file to store tsv files
+├── analyse_imbd_dataset.ipynb # notebook for analisys
+├── creating_db.ipynb # notebook to create db and fill with rows
+├── docker-compose.yml # docker compose file
+└── downloads # file to store tsv files
 
 ```
 ## 🔑 Setup your local variables
