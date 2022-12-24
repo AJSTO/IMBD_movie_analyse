@@ -78,10 +78,10 @@ To run properly this project you should assign a environmental variables in file
 
 In this repo is created .env-sample with variables used to run containers. You need to assign variables below in your .env file:
 ```bash
-POSTGRES_PS=
-POSTGRES_DB=
-JUPYTER_TOKEN=
-HOST_DB=
+POSTGRES_PS= # database password
+POSTGRES_DB= # database name
+JUPYTER_TOKEN= # token to jupyternotebook
+HOST_DB= # select port on localhost
 ```
 ## ⚙️ Run Locally
 - Clone the project
