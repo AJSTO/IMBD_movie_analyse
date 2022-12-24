@@ -1,0 +1,23 @@
+version: "3"
+services:
+    postgres-db:
+        image: postgres:11.18-alpine
+        environment:
+            - POSTGRES_PASSWORD=${POSTGRES_PS}
+            - POSTGRES_DB=${POSTGRES_DB}
+        ports:
+            - ${HOST_DB}:5432
+    jupyter:
+        image: jupyter/base-notebook
+        command: bash -c "pip install numpy pandas sqlalchemy seaborn matplotlib psycopg2-binary wget && conda install wordcloud && jupyter lab --ServerApp.token=${JUPYTER_TOKEN}"
+        environment:
+            - NB_USER=docker_worker
+            - JUPYTER_TOKEN=${JUPYTER_TOKEN}
+            - POSTGRES_PASSWORD=${POSTGRES_PS}
+            - POSTGRES_DB=${POSTGRES_DB}
+            - HOST_DB=${HOST_DB}
+        volumes:
+            - ./:/home/jovyan/notebook
+        working_dir: /home/jovyan/notebook
+        ports:
+            - 8888:8888
