@@ -108,5 +108,5 @@ Run dockercomposer:
 ```
 🚨In case the notebook requires a token pass a value which was assigned to JUPYER_TOKEN in .env🚨
 
-1. Choose a file 🗒️creating_db.ipynb and run all cells to create db and with values.
+1. Choose a file 🗒️creating_db.ipynb and run all cells to create db with values.
 2. Choose a file 🗒️analyse_imbd_dataset.ipynb and run all cells to see move analisys.
